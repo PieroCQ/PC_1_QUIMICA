@@ -1,0 +1,19 @@
+Python 3.11.5 (tags/v3.11.5:cce6ba9, Aug 24 2023, 14:38:34) [MSC v.1936 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license" for more information.
+>>> # Definir masas atómicas (en unidades de masa atómica unificada, u)
+>>> masa_C = 12.01
+>>> masa_H = 1.01
+>>> masa_O = 16.00
+>>>
+>>> # Composición molecular del etanol: C2H5OH
+>>> num_C = 2
+>>> num_H = 6
+>>> num_O = 1
+>>>
+>>> # Calcular la masa molecular del etanol
+>>> masa_molecular_etanol = (num_C * masa_C) + (num_H * masa_H) + (num_O * masa_O)
+>>>
+>>> # Imprimir la masa molecular del etanol
+>>> print("La masa molecular del etanol (C2H5OH) es:", masa_molecular_etanol, "u")
+La masa molecular del etanol (C2H5OH) es: 46.08 u
+>>>
