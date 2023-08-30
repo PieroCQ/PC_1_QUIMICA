@@ -1,0 +1,24 @@
+Python 3.11.5 (tags/v3.11.5:cce6ba9, Aug 24 2023, 14:38:34) [MSC v.1936 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license" for more information.
+>>> # Definir las temperaturas de fusión en Celsius de 5 metales
+>>> temperaturas_celsius = [1538, 660.3, 1084, 327.5, 1768]
+>>>
+>>> # Convertir las temperaturas a Kelvin
+>>> def celsius_a_kelvin(celsius):
+...     return celsius + 273.15
+...
+>>> # Crear una lista de temperaturas en Kelvin
+>>> temperaturas_kelvin = [celsius_a_kelvin(temp) for temp in temperaturas_celsius]
+>>>
+>>> # Imprimir las temperaturas en Kelvin
+>>> print("Temperaturas de fusión en Kelvin:")
+Temperaturas de fusión en Kelvin:
+>>> for metal, temp_kelvin in zip(["Hierro", "Plomo", "Aluminio", "Zinc", "Oro"], temperaturas_kelvin):
+...     print(f"{metal}: {temp_kelvin:.2f} K")
+...
+Hierro: 1811.15 K
+Plomo: 933.45 K
+Aluminio: 1357.15 K
+Zinc: 600.65 K
+Oro: 2041.15 K
+>>>
