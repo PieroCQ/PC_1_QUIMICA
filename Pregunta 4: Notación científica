@@ -1,0 +1,11 @@
+# Operaciones en notación científica
+resultado_1 = 1.321e-4 + 8.5e-2
+resultado_2 = 1.71e3 - 2.01e2
+resultado_3 = (7.4e5) * (7.2e4)
+resultado_4 = (7.4e5) / (7.2e4)
+
+# Imprimir resultados en notación científica
+print("Resultado 1:", "{:.3e}".format(resultado_1))
+print("Resultado 2:", "{:.3e}".format(resultado_2))
+print("Resultado 3:", "{:.3e}".format(resultado_3))
+print("Resultado 4:", "{:.3e}".format(resultado_4))
