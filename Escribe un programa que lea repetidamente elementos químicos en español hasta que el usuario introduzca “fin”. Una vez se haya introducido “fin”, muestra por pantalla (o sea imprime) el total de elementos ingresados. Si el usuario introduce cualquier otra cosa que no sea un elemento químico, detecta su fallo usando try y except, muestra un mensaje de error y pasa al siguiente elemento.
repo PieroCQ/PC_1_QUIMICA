@@ -1,0 +1,34 @@
+Python 3.11.5 (tags/v3.11.5:cce6ba9, Aug 24 2023, 14:38:34) [MSC v.1936 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license" for more information.
+>>> # Diccionario de elementos químicos en español
+>>> elementos_quimicos = {
+...     "hidrogeno": "H",
+...     "helio": "He",
+...     "litio": "Li",
+...     "berilio": "Be",
+...     "boro": "B",
+...     "carbono": "C",
+...     "nitrogeno": "N",
+...     "oxigeno": "O",
+...     "flúor": "F",
+...     "neon": "Ne",
+...     # ... Agrega más elementos si lo deseas
+... }
+>>>
+>>> # Inicializar contador de elementos
+>>> total_elementos = 0
+>>>
+>>> # Bucle para ingresar elementos químicos
+>>> while True:
+...     elemento = input("Introduce un elemento químico en español (o 'fin' para terminar): ").lower()
+...
+...     if elemento == "fin":
+...         break
+...
+...     try:
+...         simbolo = elementos_quimicos[elemento]
+...         print(f"Símbolo de {elemento}: {simbolo}")
+...         total_elementos += 1
+...     except KeyError:
+...         print(f"Error: '{elemento}' no es un elemento químico válido.")
+...         continueprint("Total de elementos ingresados:", total_elementos)
