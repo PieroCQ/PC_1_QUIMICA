@@ -1,0 +1,18 @@
+Código necesario para generar la imagen
+
+Reacción química
+# Masas moleculares (en unidades de masa atómica, uma)
+masa_molecular_reactivo1 = 6 * 12.01 + 12 * 1.01 + 6 * 16.00
+masa_molecular_reactivo2 = 6 * 16.00
+masa_molecular_producto1 = 6 * 12.01 + 6 * 16.00
+masa_molecular_producto2 = 6 * 2.02 + 6 * 16.00
+
+# Masas totales de reactivos y productos
+masa_total_reactivos = masa_molecular_reactivo1 + masa_molecular_reactivo2
+masa_total_productos = masa_molecular_producto1 + masa_molecular_producto2
+
+# Verificación de conservación de la masa
+if masa_total_reactivos == masa_total_productos:
+    print("La conservación de la masa se cumple en la reacción química.")
+else:
+    print("La conservación de la masa NO se cumple en la reacción química.")
