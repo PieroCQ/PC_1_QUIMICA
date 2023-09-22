@@ -1,0 +1,13 @@
+# Masas atómicas
+masa_molar_MgO = 40  # g/mol
+masa_molar_MgOH2 = 58  # g/mol
+
+# Masas dadas
+masa_MgO = 100  # g
+masa_MgOH2 = X  # g
+
+# Calcula la masa máxima de Mg(OH)2 formado
+masa_maxima_MgOH2 = masa_MgO * masa_molar_MgOH2 /masa_molar_MgO
+
+# Imprime el resultado
+print(f"La masa máxima de Mg(OH)2 que se obtendrá es {masa_maxima_MgOH2:.2f} gramos.")
